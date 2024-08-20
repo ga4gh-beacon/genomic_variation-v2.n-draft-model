@@ -4,6 +4,8 @@ title: VRS SequenceLocation
 type: object
 description: >-
   Simplified VRS v2 Location definitions.
+oneOf:
+  - '#/definitions/SequenceLocation'
 definitions:
   SequenceLocation:
     description: >-

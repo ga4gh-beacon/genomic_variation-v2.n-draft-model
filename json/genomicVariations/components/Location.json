@@ -53,6 +53,9 @@
         }
     },
     "description": "Simplified VRS v2 Location definitions.",
+    "oneOf": [
+        "#/definitions/SequenceLocation"
+    ],
     "title": "VRS SequenceLocation",
     "type": "object"
 }
