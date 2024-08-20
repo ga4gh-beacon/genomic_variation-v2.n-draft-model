@@ -1,8 +1,7 @@
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Genomic Variation
-$comment: 'version: ga4gh-beacon-variant-v2.0.0'
 description: >-
-  Schema for a genomic variant entry.
+  Schema for a genomic variant entry for a Beacon version TBD (beyond v2.1)
 type: object
 required:
   - variantInternalId
@@ -13,6 +12,8 @@ properties:
       - $ref: https://raw.githubusercontent.com/ga4gh/vrs/1.2/schema/vrs.json#/definitions/MolecularVariation
       - $ref: https://raw.githubusercontent.com/ga4gh/vrs/1.2/schema/vrs.json#/definitions/SystemicVariation
       - $ref: '#/definitions/LegacyVariation'
+      - $ref: ./components/MolecularVariation
+      - $ref: ./components/SystemicVariation
   variantInternalId:
     description: >-
       Reference to the **internal** variant ID. This represents the primary

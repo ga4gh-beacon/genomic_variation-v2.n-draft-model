@@ -1,5 +1,4 @@
 {
-    "$comment": "version: ga4gh-beacon-variant-v2.0.0",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "additionalProperties": true,
     "definitions": {
@@ -522,7 +521,7 @@
             "type": "object"
         }
     },
-    "description": "Schema for a genomic variant entry.",
+    "description": "Schema for a genomic variant entry for a Beacon version TBD (beyond v2.1)",
     "properties": {
         "caseLevelData": {
             "description": "caseLevelData reports about the variation instances observed in individual analyses.",
@@ -564,6 +563,12 @@
                 },
                 {
                     "$ref": "#/definitions/LegacyVariation"
+                },
+                {
+                    "$ref": "./components/MolecularVariation"
+                },
+                {
+                    "$ref": "./components/SystemicVariation"
                 }
             ]
         }
