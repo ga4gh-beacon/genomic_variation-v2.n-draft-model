@@ -42,11 +42,20 @@
                 ],
                 "type": "string"
             },
+            "mateEnd": {
+                "description": "genomic end position of fusion partner breakpoint region",
+                "type": "integer"
+            },
             "mateName": {
                 "$ref": "./requestParametersComponents.json#/definitions/RefSeqId"
             },
+            "mateStart": {
+                "description": "genomic start position of fusion partner breakpoint region",
+                "type": "integer"
+            },
             "referenceBases": {
-                "$ref": "./requestParametersComponents.json#/definitions/ReferenceBases"
+                "$ref": "./requestParametersComponents.json#/definitions/ReferenceBases",
+                "description": "TODO: Evaluate to retire this parameter since the use is depending on the data model & storage modus (e.g. VRS doesn't have an explicit concept of `reference` in the presentation of a variation)"
             },
             "referenceName": {
                 "$ref": "./requestParametersComponents.json#/definitions/RefSeqId"

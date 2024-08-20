@@ -23,6 +23,7 @@ properties:
       be returned in the `identifiers` section. A Beacon instance can, of course,
       use the VRSid as their own internal id but still MUST represent this then in
       the `identifiers` section.
+      TODO: Review this definition.
     type: string
     examples:
       - var00001

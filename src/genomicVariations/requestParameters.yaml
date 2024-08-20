@@ -51,6 +51,10 @@ g_variant:
       minItems: 1
       maxItems: 2
     referenceBases:
+      description: >-
+        TODO: Evaluate to retire this parameter since the use is depending on the
+        data model & storage modus (e.g. VRS doesn't have an explicit concept of
+        `reference` in the presentation of a variation)
       $ref: ./requestParametersComponents.yaml#/definitions/ReferenceBases
     alternateBases:
       $ref: ./requestParametersComponents.yaml#/definitions/AlternateBases
@@ -99,6 +103,12 @@ g_variant:
       minimum: 1
     mateName:
       $ref: ./requestParametersComponents.yaml#/definitions/RefSeqId
+    mateStart:
+      type: integer
+      description: genomic start position of fusion partner breakpoint region
+    mateEnd:
+      type: integer
+      description: genomic end position of fusion partner breakpoint region
     geneId:
       description: >-
         * A gene identifier
